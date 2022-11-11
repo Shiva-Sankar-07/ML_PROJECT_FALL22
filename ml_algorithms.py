@@ -57,3 +57,14 @@ LinearRegression()
 
 #evaluating the linear regression model
 evaluate_model(lireg, 'Linear Regression')
+
+#DecisionTreeRegressor
+elf = DecisionTreeRegressor()
+elf.fit(X_train,Y_train) 
+
+#calling the DecisionTreeRegressor function
+DecisionTreeRegressor() 
+
+#evaluating the DecisionTreeRegressor model
+evaluate_model(elf, 'DecisionTreeRegressor')
+
