@@ -59,12 +59,12 @@ LinearRegression()
 evaluate_model(lireg, 'Linear Regression')
 
 #DecisionTreeRegressor
-elf = DecisionTreeRegressor()
-elf.fit(X_train,Y_train) 
+dtreg = DecisionTreeRegressor(max_depth = 12)
+dtreg.fit(X_train,Y_train) 
 
 #calling the DecisionTreeRegressor function
-DecisionTreeRegressor() 
+DecisionTreeRegressor(max_depth=12) 
 
 #evaluating the DecisionTreeRegressor model
-evaluate_model(elf, 'DecisionTreeRegressor')
+evaluate_model(dtreg, "Decision Tree")
 
