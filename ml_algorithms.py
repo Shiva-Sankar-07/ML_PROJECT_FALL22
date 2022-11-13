@@ -68,3 +68,15 @@ DecisionTreeRegressor(max_depth=12)
 #evaluating the DecisionTreeRegressor model
 evaluate_model(dtreg, "Decision Tree")
 
+#Random Forest 
+# n_estimators - The number of trees in the forest.
+# min_samples_split - The minimum number of samples required to split an internal node
+rfreg = RandomForestRegressor(n_estimators = 60, max_depth = 13, min_samples_split = 5)
+rfreg.fit(X_train, Y_train)
+
+#Calling the Random Forest function
+RandomForestRegressor(max_depth=13, min_samples_split=5, n_estimators=60)
+
+# evaluate the Random Forest 
+evaluate_model(rfreg, 'Random Forest')
+
