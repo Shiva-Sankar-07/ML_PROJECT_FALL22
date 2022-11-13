@@ -80,3 +80,29 @@ RandomForestRegressor(max_depth=13, min_samples_split=5, n_estimators=60)
 # evaluate the Random Forest 
 evaluate_model(rfreg, 'Random Forest')
 
+#Gradient Boosting
+# n_estimators - The number of boosting stages to perform.
+# max_depth - maximum depth of the individual regression estimators.
+gbreg = GradientBoostingRegressor(n_estimators=497, max_depth=10)
+gbreg.fit(X_train, Y_train)
+
+#Calling the Gradient Boosting function
+GradientBoostingRegressor(max_depth=10, n_estimators=497)
+
+# evaluate the Gradient Boosting Algorithm
+evaluate_model(gbreg, 'Gradient Boosting')
+
+#AdaBoost Tree
+# n_estimators - The number of trees in the forest.
+# learning_rate - Learning rate shrinks the contribution of each classifier by learning_rate.
+adareg = AdaBoostRegressor(base_estimator=dtreg, n_estimators=60, learning_rate=0.005)
+
+#Calling the AdaBoost Boost function
+AdaBoostRegressor(base_estimator=DecisionTreeRegressor(max_depth=12), learning_rate=0.005,  n_estimators=60)
+adareg.fit(X_train, Y_train)
+
+# evaluate the AdaBoost Tree Algorithm
+evaluate_model(adareg, 'Ada Boost Tree')
+
+#comparision between all the above algorithms
+results
