@@ -5,13 +5,20 @@ This is our academic project for CS-584 "Machine Learning".
 In current life there are a lot of pressing issues one of which is traffic congestion which needs to be addressed as it is getting more serious for quite a while. The high volume of vehicles, the lack of infrastructure and the uneven distribution of the development are the primary reasons of traffic congestion.
 Traffic flow analysis and forecasting has always been a topic of enormous significance. This information can be used by the government and traffic police to better guide traffic and ensure its efficient and free flow. The knowledge gained can stop traffic jams in the future and spare commute time and resources effectively. Since emergency services like the ambulance can get to hospitals more quickly, it can also save lives. To successfully address these issues, traffic flow prediction is crucial.
 
-### Datasets:
+### Datasets
 Over the years, various approaches of predicting traffic flow volume have been put forth. We used the Metro Interstate Traffic Volume Data Set in our project. This dataset is considered because it includes a variety of elements, including weather information and is way clear than its predecessor. It contains hourly traffic data along the Minneapolis–St. Paul route.
 
 ### Data Cleaning and Data Preparation
 1. Remove unneeded columns from the dataset that won't help in prediction. These are removed after examining the correlation between features.
 2. Convert values to numerical format so that the algorithms can utilize them to make predictions, in order to correctly use the machine learning methods.
 3. The data contains a number of rows with these values. The very big values are replaced by the maximum value that has been established, and the missing values are replaced by the mean values.
+
+### Algorithms used
+1. Linear Regression
+2. Decision Tree
+3. Random Forest
+4. Gradient Boosting
+5. AdaBoost
 
 ### Results
 The several ML models were put into practice, and the outcomes were compared to determine which model performed the best. The root mean square error for linear regression was 1844.35. 
